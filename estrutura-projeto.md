@@ -79,7 +79,51 @@ Acessando Git e fazendo versionamento
 Criando um arquivo README
 - touch README.md
 - git add README.md
+- git branch -M main
+- git push -u origin main
 
 Cada arquivo que está com U não foi versionado(imagem 6), boas práticas é colocar 1 de cada vez para ir gerando o histórico
-- git commit -m "Adicionando a estrutura do projeto
+- git add .gitignore .python-version pyproject.toml
 - git commit -m "Adicionando a estrutura do projeto"
+- git push
+
+Criar uma pasta aparte de desenvolvimento app ou src
+- pasta pipeline dentro da src
+- Dentro da pipeline extract.py
+- dentro da src main.py
+
+criar a pasta data, e colocar a pasta input
+
+Quebrar a ETL em 3 momentos
+
+o que é o if __name__ == "__main__"
+- É um pacote em python que permite ser importado para outro local para serem trabalhados em conjunto, onde só irá rodar quando realmente for necessário
+
+no meu main criar o pacote de extração do Extract
+
+- git add app/
+- git add data/
+- git add pyproject.toml
+- git commit -m "extract funcionando"
+- git push 
+
+trocando branch
+- git branch transform
+- git checkout transform
+
+Criar um arquivo transform.py dentro de pipeline
+
+Criar uma pasta aparte tests e criar um arquivo dentro chamado test_pipeline.py
+- poetry add pytest
+esse é o padrão dos testes https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/
+
+exemplo de teste que ele forneceu
+
+def testar_a_concatenacao_da_lista_de_df():
+    arrange = 3
+
+    act = 3
+
+    assert arrange == act
+
+    
