@@ -4,7 +4,7 @@ Não deixar o próprio Python fazer a própria gestão de suas versões, para is
 
 Enganar a máquina, setando um caminho especifico para ser utilizado com uma máquina virtual ou ambiente virtual, mudando o endereço/path pela váriavel de ambiente
 
-- pyenv local ou global
+- pyenv local ou global (será criado um arquivo python-version)
 
 - pyenv init
 
@@ -22,7 +22,7 @@ print(site.getsitepackages())
 poetry config virtualenvs.in-project true 
 - Sempre usar esse primeiro comando sempre que cria pq ele cria o ambiente virtual
 
-- poetry init
+- poetry init (será criado um projeto pyproject.toml)
 (
 Package name [workshop]:  
 Version [0.1.0]:  
@@ -79,6 +79,9 @@ Acessando Git e fazendo versionamento
 Criando um arquivo README
 - touch README.md
 - git add README.md
+- git commit -m "Adicionando o arquivo README"
+- git add .
+- git commit -m "Adicionando a estrutura do projeto"
 - git branch -M main
 - git push -u origin main
 
